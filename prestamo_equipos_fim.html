@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Préstamo de Equipos — FIM · UAS</title>
+</head>
+<body>
+
+<h2>FACULTAD DE INGENIERÍA MOCHIS — UAS</h2>
+<h3>Coordinación de Centros de Cómputo y Red Escolar</h3>
+<h3>Bitácora de Préstamo de Equipos</h3>
+
+<form method="post" action="">
+
+  <fieldset>
+    <legend>Datos del solicitante</legend>
+
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" size="50"><br><br>
+
+    <label for="no_control">No. de Control / Empleado:</label><br>
+    <input type="text" id="no_control" name="no_control" size="20"><br><br>
+
+    <label for="carrera">Carrera:</label><br>
+    <select id="carrera" name="carrera">
+      <option value="">-- Seleccionar --</option>
+      <option>Ing. En Software</option>
+      <option>Ing. En Procesos Industrial</option>
+      <option>Ing. Civil</option>
+      <option>Ing. En Geodesia</option>
+      <option>Otra</option>
+    </select><br><br>
+
+    <label for="grupo">Grupo:</label><br>
+    <input type="text" id="grupo" name="grupo" size="10"><br><br>
+
+    <label>Tipo de usuario:</label><br>
+    <input type="radio" id="tipo_alumno" name="tipo_usuario" value="Alumno" checked>
+    <label for="tipo_alumno">Alumno</label>
+    &nbsp;
+    <input type="radio" id="tipo_profesor" name="tipo_usuario" value="Profesor">
+    <label for="tipo_profesor">Profesor</label><br>
+
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Equipo(s) en préstamo</legend>
+
+    <input type="checkbox" id="eq_c" name="equipo" value="C">
+    <label for="eq_c">C — Computadora/Laptop</label><br>
+
+    <input type="checkbox" id="eq_pry" name="equipo" value="PRY">
+    <label for="eq_pry">PRY — Proyector</label><br>
+
+    <input type="checkbox" id="eq_cab" name="equipo" value="CAB">
+    <label for="eq_cab">CAB — Cables / Accesorios</label><br>
+
+    <input type="checkbox" id="eq_otro" name="equipo" value="OTRO">
+    <label for="eq_otro">Otro</label><br><br>
+
+    <label for="descripcion">Descripción / Especificaciones del equipo:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="3" cols="60"></textarea><br>
+
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Préstamo</legend>
+
+    <label for="fecha_prestamo">Fecha:</label>
+    <input type="date" id="fecha_prestamo" name="fecha_prestamo">
+    &nbsp;&nbsp;
+
+    <label for="hora_prestamo">Hora:</label>
+    <input type="time" id="hora_prestamo" name="hora_prestamo">
+    &nbsp;&nbsp;
+
+    <label for="hr_prestamo">Hr. de préstamo autorizado:</label>
+    <input type="text" id="hr_prestamo" name="hr_prestamo" size="10"><br><br>
+
+    <label for="firma_prestamo">Firma / Nombre del encargado:</label><br>
+    <input type="text" id="firma_prestamo" name="firma_prestamo" size="40"><br>
+
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Entrega (llenar al devolver el equipo)</legend>
+
+    <label for="fecha_entrega">Fecha:</label>
+    <input type="date" id="fecha_entrega" name="fecha_entrega">
+    &nbsp;&nbsp;
+
+    <label for="hora_entrega">Hora:</label>
+    <input type="time" id="hora_entrega" name="hora_entrega">
+    &nbsp;&nbsp;
+
+    <label for="hr_entrega">Hr. de entrega:</label>
+    <input type="text" id="hr_entrega" name="hr_entrega" size="10"><br><br>
+
+    <label for="firma_entrega">Firma / Nombre de quien recibe:</label><br>
+    <input type="text" id="firma_entrega" name="firma_entrega" size="40"><br>
+
+  </fieldset>
+
+  <br>
+
+  <input type="submit" value="Guardar">
+  <input type="reset" value="Limpiar">
+
+</form>
+
+</body>
+</html>
